@@ -11,6 +11,7 @@ export type User = {
 
 export type AuthContextData = {
 	signIn: (credentials: SignInCredentials) => Promise<void>;
+	signOut: () => void;
 	isAuthenticated: boolean;
 	user: User | null;
 };

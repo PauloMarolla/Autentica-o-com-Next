@@ -1,8 +1,8 @@
 import { setCookie, parseCookies, destroyCookie } from 'nookies';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { api } from '../services/api';
 import { AuthContextData, SignInCredentials, User } from './types';
 import Router from 'next/router';
+import { api } from '../services/apiClient';
 
 const AuthContext = createContext({} as AuthContextData);
 
